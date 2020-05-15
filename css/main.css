@@ -98,6 +98,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
 /***** Header and Footer *****/
 
 header, header .content-wrapper, header nav, 
@@ -112,6 +117,20 @@ header, header .content-wrapper, footer {
   justify-content: center;
 }
 
+header {
+  padding: 15px 0;
+}
+
+header .content-wrapper {
+  margin: 0;
+}
+
+header .header-divider {
+  height: 1px;
+  margin: 10px 0 20px 0;
+  width: 100%;
+}
+
 header nav, footer .social-icons {
   align-items: center;
   justify-content: space-around;
@@ -119,15 +138,34 @@ header nav, footer .social-icons {
 
 header nav {
   flex-flow: row wrap;
+  width: 60%
 }
 
 header nav ul {
   justify-content: space-around;
+  width: 100%;
+}
+
+footer {
+  flex-direction: column;
+}
+
+footer .content-wrapper {
+  width: 55%;
+}
+
+footer .contact {
+  margin-bottom: 50px;
 }
 
 footer .social-icons p {
   align-items: center;
   justify-content: center;
+  margin: 0;
+}
+
+footer .copyright {
+  margin: 20px 0;
 }
 
 /***** Homepage *****/
@@ -143,6 +181,28 @@ aside, .features .features-items {
   align-items: center;
 }
 
+.features h2 {
+  margin-bottom: 60px;
+}
+
+.features article {
+  margin: 30px 0;
+  width: 63%;
+}
+
+.features p {
+  margin: 0px;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
+.reviews h3 {
+  margin: 20px 0;
+  width: 55%;
+}
+
 /***** FAQ *****/
 
 .faq, .faq .content-wrapper {
@@ -152,6 +212,18 @@ aside, .features .features-items {
   justify-content: center;
 }
 
+.faq .content-wrapper {
+  margin-top: 50px;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
+}
+
 /***** About *****/
 
 .mission, .contact-section {
@@ -159,6 +231,10 @@ aside, .features .features-items {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+.contact-section {
+  margin: 0;
 }
 
 /* ==========================================================================
