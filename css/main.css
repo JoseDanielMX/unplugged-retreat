@@ -122,6 +122,8 @@ img {
 ul, 
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -132,6 +134,7 @@ a {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  margin: 0;
 }
 
 h2, h3, h4 {
@@ -245,7 +248,15 @@ footer .contact {
 
 footer .social-icons p {
   align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
+  height: 40px;
   justify-content: center;
+  width: 40px;
+}
+
+footer .social-icons p i {
+  font-size: 1em;
 }
 
 footer .copyright {
@@ -569,6 +580,11 @@ input[type=button] {
 
   footer p {
     line-height: 1.285;
+  }
+
+  footer .social-icons {
+    justify-content: space-between;
+    width: 12.5em;
   }
 
   footer .copyright {
