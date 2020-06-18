@@ -132,24 +132,19 @@ a {
 }
 
 h2 {
-  font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   margin: 0;
 }
 
 h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
 }
 
 h3, 
 h4 {
-  font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   margin: 20px 0;
-}
-
-.contact-section h4, footer h4 {
-  color: #fff;
 }
 
 p {
@@ -168,9 +163,9 @@ address {
 
 /***** Header and Footer *****/
 
-header, header .content-wrapper, header nav, 
-header nav ul, footer, footer .social-icons, 
-footer .social-icons p {
+header, header .content-wrapper, header figure,
+header nav, header nav ul, footer,
+footer .social-icons, footer .social-icons p {
   display: flex;
 }
 
@@ -190,7 +185,6 @@ header .content-wrapper {
 
 header figure {
   align-items: center;
-  display: flex;
   flex-flow: row wrap;
   justify-content: center;
   width: 60%;
@@ -265,8 +259,8 @@ footer .copyright {
 
 /***** Homepage *****/
 
-.hero-area, aside, .features, .features .features-items,
-.reviews {
+.hero-area, aside, .features, 
+.features .features-items, .reviews {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -275,6 +269,7 @@ footer .copyright {
 .hero-area {
   background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
   background-size: cover;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -298,24 +293,24 @@ aside .form {
  
 input[type=text] {
   box-sizing: border-box;
-  width: 100%;
   color: #2a423a;
   font-style: italic;
   padding: 1em;
+  width: 100%;
 }
  
 input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
   background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
   border: none;
+  color: #e2e3ed;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
+  margin-top: 20px;
+  padding: 20px 0;
   text-align: center;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .features {
@@ -370,7 +365,7 @@ input[type=button] {
 }
 
 .faq .content-wrapper {
-  margin-top: 50px;
+  margin-top: 50px 0 0 0;
 }
 
 .faq h2 {
@@ -620,7 +615,7 @@ input[type=button] {
     margin-bottom: 20px;
   }
 
-  .features-items article {
+  .features article {
     align-items: center;
     display: flex;
     flex-basis: 50%;
@@ -630,6 +625,10 @@ input[type=button] {
 
   .features .features-item-description {
     width: 62%;
+  }
+
+  .features i {
+    margin-bottom: 30px;
   }
 
   .reviews h2 {
@@ -729,10 +728,6 @@ input[type=button] {
   }
 
   /***** Homepage *****/
-
-  .hero-area {
-    min-height: 775px;
-  }
 
   .hero-area h1 {
     font-size: 3.75em;
